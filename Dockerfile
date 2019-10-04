@@ -8,6 +8,6 @@ RUN sed -i "s/Listen 80/Listen 8080/g" /usr/local/apache2/conf/httpd.conf && \
 
 USER 1001
 
-COPY index.html /usr/local/apache2/htdocs/
+COPY ./*.html /usr/local/apache2/htdocs/
 
 CMD httpd -D FOREGROUND
