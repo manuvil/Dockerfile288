@@ -1,3 +1,6 @@
 FROM httpd:2.4
 
-CMD httpd -D FOREGROUND
+EXPOSE 8080
+
+CMD bash
+∫
